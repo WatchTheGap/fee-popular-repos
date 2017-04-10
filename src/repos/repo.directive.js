@@ -1,6 +1,20 @@
-<section class='panel-heading'>
-  {{repo.name}}
-</section>
-<section class='panel-body'>
-  <p>insert other properties here</p>
-</section>
+(function() {
+  'use strict';
+
+  angular.module('gh')
+    .directive('repoDirective', repoDirective);
+
+    function repoDirective() {
+
+      return {
+        templateUrl: 'repos/user-repos.template.js',
+        restrict: 'E',
+        scope: {
+
+        }
+      };
+
+    }
+
+
+}());
