@@ -6,7 +6,7 @@
     <input type='submit' value='Get Repos' class='btn btn-primary'>
 </form>
 
-<repos ng-repeat='repo in reposCtrl.list'
+<article ng-repeat='repo in reposCtrl.list'
          class='panel panel-info col-xs-10 col-s-6 col-md-4 col-lg-3'
-         repo='repo' list='reposCtrl.list'>
-</repos>
+         repos repo='repo' list='reposCtrl.list'>
+</article>

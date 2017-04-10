@@ -8,7 +8,7 @@
 
       return {
         templateUrl: 'repos/panel.template.html',
-        restrict: 'EA',
+        restrict: 'A',
         scope: {
           repo: '=',
           list: '='
