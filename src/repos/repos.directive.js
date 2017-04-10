@@ -13,7 +13,7 @@
 
       return {
         templateUrl: 'repos/panel.template.html',
-        restrict: 'A',
+        restrict: 'EA',
         scope: {
           repo: '=repo',
           list: '='
