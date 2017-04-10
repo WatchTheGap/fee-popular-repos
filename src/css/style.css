@@ -3,28 +3,7 @@
     display: inline-block;
 }
 
-.gh-repos ul {
-    margin: 0;
-    padding: 0;
-}
-.gh-repos li {
-    list-style: none;
-    display: block;
-    float: left;
-    margin: 0.3em;
-}
-
-.gh-repo {
-    margin: 0;
-    padding: 0.2em;
-    width: 13em;
-    min-height: 3em;
-    text-align: center;
-    border: 1px solid #666;
-    border-radius: 0.2em;
-}
-.gh-repo:hover {
-    background-color: #222;
-    color: #fff;
-    cursor: pointer;
+.panel{
+  padding: 0;
+  margin: 1em;
 }
