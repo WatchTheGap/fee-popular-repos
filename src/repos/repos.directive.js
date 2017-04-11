@@ -21,6 +21,12 @@
           link: setupCollapse
       };
 
+      /**
+       * Allows the user to hide the panel body when clicking the panel heading
+       * @param  {String} scope   scope of he directive
+       * @param  {String} element an html element
+       * @return {void}           
+       */
       function setupCollapse(scope, element) {
         console.log('setting up collapse feature');
         $(element)

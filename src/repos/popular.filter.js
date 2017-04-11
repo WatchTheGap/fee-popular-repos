@@ -4,8 +4,18 @@
   angular.module('gh')
     .filter('popular', popular);
 
-    function popular() {
 
+    /**
+     * Creates a filter to sort a repo by a custom "popularity" rating
+     * @return {function} The function that calculates and sorts by the popularity rating
+     */
+    function popular() {
+      
+     /**
+      * Calculates and sorts by the popularity rating
+      * @param  {Object} repo
+      * @return {Number}       ]
+      */
       return function sortByPopularity(repo) {
         if(!Array.isArray(repo)) {
           return repo;
