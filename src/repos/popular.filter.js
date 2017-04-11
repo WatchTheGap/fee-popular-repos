@@ -6,19 +6,19 @@
 
     function popular() {
 
-      return function sortByPopularity(repos) {
+      function popularity(repo) {
+        return repo.stargazers_count + repo.forks_count * 2 + repo.open_issues_count / 2;
+      }
+
+      function sortByPopularity(repos) {
         if(!Array.isArray(repos)) {
           return repos;
         }
 
-        return repos.sort(function sortRepos(a,b) {
+        repos.sort(function sortRepos(a,b) {
           return b - a;
         });
 
-      };
-
-      function popularity(a, b, c) {
-        return a + b*2 + c/2;
       }
 
     }
