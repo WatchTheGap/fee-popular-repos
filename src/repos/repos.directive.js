@@ -16,7 +16,7 @@
         templateUrl: 'repos/panel.template.html',
         restrict: 'EA',
         scope: {
-          repo: '=repo'
+          repo: '=',
         },
           link: setupCollapse
       };

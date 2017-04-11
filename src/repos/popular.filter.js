@@ -6,20 +6,20 @@
 
     function popular() {
 
-      function popularity(repo) {
-        return repo.stargazers_count + repo.forks_count * 2 + repo.open_issues_count / 2;
-      }
-
-      function sortByPopularity(repos) {
-        if(!Array.isArray(repos)) {
-          return repos;
+      return function sortByPopularity(repo) {
+        if(!Array.isArray(repo)) {
+          return repo;
         }
 
-        repos.sort(function sortRepos(a,b) {
-          return b - a;
-        });
+        let repoCopy = [].concat(repo);
 
-      }
+        return repoCopy.sort(function sortRepos(a,b) {
+          let aPop = a.stargazers_count + a.forks_count * 2 + a.open_issues_count / 2;
+          let bPop = b.stargazers_count + b.forks_count * 2 + b.open_issues_count / 2;
+
+          return bPop - aPop;
+        });
+      };
 
     }
 
