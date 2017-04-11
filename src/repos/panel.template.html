@@ -9,7 +9,7 @@
   <section class='panel-body'>
     <p><strong>Owner: </strong>{{repo.owner.login}}</p>
     <p><strong>Stars: </strong>{{repo.stargazers_count}}</p>
-    <p><strong>Size: </strong>{{repo.size}}</p>
+    <p><strong>Size: </strong>{{repo.size | mbConvert:"MB"}}</p>
     <p><strong>Language: </strong>{{repo.language}}</p>
   </section>
 
