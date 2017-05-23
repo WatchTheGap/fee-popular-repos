@@ -3,7 +3,7 @@
 
 A small app to display github repos for practice at The Iron Yard.
 
-! [GitHub Repos demo](/src/github_repos.gif)
+# ![pageres](github_repos.gif)
 
 ## Getting Started
 
